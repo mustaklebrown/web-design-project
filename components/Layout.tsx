@@ -12,7 +12,7 @@ const Layout = ({ children }: any) => {
       <footer className="p-4 w-full border shadow-sm shadow-gray-50">
         <p className="text-center ">footer 2023</p>
       </footer>
-      <div className="fixed  flex gap-10 justify-between items-center bottom-5 translate-x-[-50%] left-[50%] bg-gradient p-4 max-w-md mx-auto z-30 rounded-md">
+      <div className="fixed  flex gap-10 justify-between items-center bottom-10 translate-x-[-50%] left-[50%] bg-gradient p-4 max-w-md mx-auto z-30 rounded-md">
         <a
           href="#nav"
           className="text-base cursor-pointer font-semibold hover:scale-125 duration-200 transition-all"
