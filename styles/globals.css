@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+.primarybtn {
+  @apply max-w-sm text-base uppercase py-2 px-4 rounded-md hover:bg-gradient-to-tr hover:from-rose-600 hover:to-yellow-600 bg-gradient-to-r from-yellow-500 to-rose-500 transform transition-all duration-300;
+}
+.secondarybtn {
+  @apply max-w-sm text-base uppercase py-1 px-3 rounded-md hover:bg-yellow-500 bg-yellow-700 transform transition-all duration-300;
+}
+
+.btn {
+  @apply px-4 py-2 text-gray-100 rounded-xl uppercase font-semibold bg-indigo-700 duration-200 transition-all hover:bg-indigo-500;
+}
+.text-gradient-1 {
+  @apply ease-in-out hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600;
+}
+.bg-gradient {
+  @apply ease-in-out   bg-gradient-to-r from-yellow-500  to-rose-600;
+}
