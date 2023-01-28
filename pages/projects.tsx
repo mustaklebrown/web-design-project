@@ -5,11 +5,11 @@ import { FaHome } from 'react-icons/fa';
 import Project from '../components/Project'
 import { projects } from '../data/data'
 
-const Projects = () => {
+const Projects = ({ products }) => {
     const [index, setIndex] = useState(2)
     const [Pjt, setPjt] = useState("design")
     const [active, setActive] = useState("primarybtn")
-    const products = projects
+
 
     const filter = (category: string) => {
         if (category == "plates") {
@@ -57,8 +57,8 @@ const Projects = () => {
 export default Projects
 
 
-// export const getServerSideProps = async () => {
-//     const res = await fetch('http://localhost:3000/api/products')
-//     const data = await res.json()
-//     return { props: { products: data } }
-// }
+export const getServerSideProps: GetServerSideProps = async () => {
+    const res = await fetch('http://localhost:3000/api/products')
+    const data = await res.json()
+    return { props: { products: data } }
+}
