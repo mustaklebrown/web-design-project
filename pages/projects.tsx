@@ -58,7 +58,14 @@ export default Projects
 
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const res = await fetch('http://localhost:3000/api/products')
-    const data = await res.json()
-    return { props: { products: data } }
+    try {
+
+        const res = await fetch('http://localhost:3000/api/products')
+        const data = await res.json()
+        return { props: { products: data } }
+    } catch (error) {
+        throw new Error("new error on the server");
+
+    }
+
 }
