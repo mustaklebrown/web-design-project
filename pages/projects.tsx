@@ -1,5 +1,7 @@
 import { GetServerSideProps } from 'next';
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
+import { FaHome } from 'react-icons/fa';
 import Project from '../components/Project'
 
 const Projects = ({ products }) => {
@@ -27,6 +29,15 @@ const Projects = ({ products }) => {
 
     return (
         <div className='max-w-7xl mx-auto py-10'>
+            <div className='flex mb-10'>
+
+                <Link
+                    href="/"
+                    className="btn"
+                >
+                    <FaHome fontSize={25} />
+                </Link>
+            </div>
             <div className=" grid  grid-cols-3 gap-4 items-center mb-4 justify-center md:gap-4">
                 <button onClick={() => filter("design")} className={` ${index == 2 && active} btn`}>design</button>
                 <button onClick={() => filter("plates")} className={` ${index == 1 && active} btn`}>plates</button>
