@@ -48,6 +48,11 @@ const Portfolio = () => {
           return <Projects key={pro.id} pro={pro} project={project} />;
         })}
       </div>
+      <div className="mt-10">
+        <Link href="/projects" className="primarybtn">
+          projects
+        </Link>
+      </div>
     </div>
   );
 };

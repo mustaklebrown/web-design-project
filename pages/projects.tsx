@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
 import { FaHome } from 'react-icons/fa';
 import Project from '../components/Project'
-import { projects } from '../data/data'
 
 const Projects = ({ products }) => {
     const [index, setIndex] = useState(2)
